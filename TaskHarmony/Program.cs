@@ -8,6 +8,7 @@ namespace TaskHarmony
 {
     internal static class Program
     {
+        //new
         /// <summary>
         /// Point d'entrée principal de l'application.
         /// </summary>
