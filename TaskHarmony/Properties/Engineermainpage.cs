@@ -40,9 +40,11 @@ namespace TaskHarmony.Properties
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Absentci3 absentci3 = new Absentci3();
-            absentci3.Show();
-            this.Hide();
+           
+               _ِAbsentCo3 a = new _ِAbsentCo3();
+                a.Show();
+                this.Hide();
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -50,6 +52,20 @@ namespace TaskHarmony.Properties
             chatsearch chatsearch = new chatsearch();
             chatsearch.Show();
             this.Hide();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+          
+            Absentci3 absentci3 = new Absentci3();
+            absentci3.Show();
+            this.Hide();
+            
+        }
+
+        private void Engineermainpage_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

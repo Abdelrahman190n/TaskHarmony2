@@ -43,7 +43,7 @@ namespace TaskHarmony.Properties
 
         private void button2_Click(object sender, EventArgs e)
         {
-            AbsenceCi absenceCi = new AbsenceCi();
+            AbsenceCo absenceCi = new AbsenceCo();
             absenceCi.Show();
             this.Hide();
         }
@@ -59,6 +59,13 @@ namespace TaskHarmony.Properties
         {
             AboutAppworker aboutAppworker = new AboutAppworker();
             aboutAppworker.Show();
+            this.Hide();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            AbsenceCi absenceCi = new AbsenceCi();
+            absenceCi.Show();
             this.Hide();
         }
     }

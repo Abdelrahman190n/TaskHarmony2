@@ -19,8 +19,10 @@ namespace TaskHarmony.Properties
 
         private void button1_Click(object sender, EventArgs e)
         {
-            WorkermainPage2 workermainPage2 = new WorkermainPage2();
-            workermainPage2.Show();
+            Workermainpage workermainPage = new Workermainpage();
+            workermainPage.button6.Visible = false;
+            workermainPage.button2.Visible = true;
+            workermainPage.Show();
             this.Hide();
         }
 

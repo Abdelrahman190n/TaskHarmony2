@@ -19,7 +19,9 @@ namespace TaskHarmony.Properties
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Engineermain2 engineermain2 = new Engineermain2();
+            Engineermainpage engineermain2 = new Engineermainpage();
+            engineermain2.button6.Visible = false;
+            engineermain2.button2.Visible = true;
             engineermain2.Show();
             this.Hide();
         }

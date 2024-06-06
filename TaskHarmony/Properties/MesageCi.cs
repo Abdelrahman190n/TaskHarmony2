@@ -26,8 +26,10 @@ namespace TaskHarmony.Properties
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SupermainPage2 supermainPage2 = new SupermainPage2();
-            supermainPage2.Show();
+            Supervisormainpage supermainPage = new Supervisormainpage();
+            supermainPage.button6.Visible = false;
+            supermainPage.button2.Visible = true;
+            supermainPage.Show();
             this.Hide();
         }
     }
