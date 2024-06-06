@@ -1,0 +1,34 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace TaskHarmony.Properties
+{
+    public partial class Absentci3 : Form
+    {
+        public Absentci3()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Engineermainpage engineermainpage   = new Engineermainpage();
+            engineermainpage.Show();
+            this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Messageci3 messageci3 = new Messageci3();
+            messageci3.Show();
+            this.Hide();
+        }
+    }
+}

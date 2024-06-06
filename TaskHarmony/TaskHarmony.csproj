@@ -1,0 +1,588 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{34ECB485-2117-429F-939A-02D7C967BF86}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TaskHarmony</RootNamespace>
+    <AssemblyName>TaskHarmony</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AboutApp2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\AboutApp2.Designer.cs">
+      <DependentUpon>AboutApp2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AboutAppworker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\AboutAppworker.Designer.cs">
+      <DependentUpon>AboutAppworker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AbsenceCi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\AbsenceCi.Designer.cs">
+      <DependentUpon>AbsenceCi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AbsenceCo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\AbsenceCo.Designer.cs">
+      <DependentUpon>AbsenceCo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Absentci.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\Absentci.Designer.cs">
+      <DependentUpon>Absentci.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Absentci3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\Absentci3.Designer.cs">
+      <DependentUpon>Absentci3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Absentco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\Absentco.Designer.cs">
+      <DependentUpon>Absentco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\chatsearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\chatsearch.Designer.cs">
+      <DependentUpon>chatsearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Chatwithsp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\Chatwithsp.Designer.cs">
+      <DependentUpon>Chatwithsp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\chatwithsp2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\chatwithsp2.Designer.cs">
+      <DependentUpon>chatwithsp2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\chatwithsp3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\chatwithsp3.Designer.cs">
+      <DependentUpon>chatwithsp3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\chatwithwr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\chatwithwr.Designer.cs">
+      <DependentUpon>chatwithwr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\chatwithwr2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\chatwithwr2.Designer.cs">
+      <DependentUpon>chatwithwr2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\chatwithwr3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\chatwithwr3.Designer.cs">
+      <DependentUpon>chatwithwr3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Engineermain2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\Engineermain2.Designer.cs">
+      <DependentUpon>Engineermain2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\MeeageCo3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\MeeageCo3.Designer.cs">
+      <DependentUpon>MeeageCo3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\ِAbsentCo3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\ِAbsentCo3.Designer.cs">
+      <DependentUpon>ِAbsentCo3.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\AboutApp2.resx">
+      <DependentUpon>AboutApp2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\AboutApp3.resx">
+      <DependentUpon>AboutApp3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\AboutAppworker.resx">
+      <DependentUpon>AboutAppworker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\AbsenceCi.resx">
+      <DependentUpon>AbsenceCi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\AbsenceCo.resx">
+      <DependentUpon>AbsenceCo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Absentci.resx">
+      <DependentUpon>Absentci.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Absentci3.resx">
+      <DependentUpon>Absentci3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Absentco.resx">
+      <DependentUpon>Absentco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\chatengineer2.resx">
+      <DependentUpon>chatengineer2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\chatengineer3.resx">
+      <DependentUpon>chatengineer3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\chatsearch.resx">
+      <DependentUpon>chatsearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\ChatwithEn.resx">
+      <DependentUpon>ChatwithEn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\ChatwithEn2.resx">
+      <DependentUpon>ChatwithEn2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\ChatwithEn3.resx">
+      <DependentUpon>ChatwithEn3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Chatwithsp.resx">
+      <DependentUpon>Chatwithsp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\chatwithsp2.resx">
+      <DependentUpon>chatwithsp2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\chatwithsp3.resx">
+      <DependentUpon>chatwithsp3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\ChatwithWorker.resx">
+      <DependentUpon>ChatwithWorker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\ChatwithWorker2.resx">
+      <DependentUpon>ChatwithWorker2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\ChatwithWorker3.resx">
+      <DependentUpon>ChatwithWorker3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\chatwithwr.resx">
+      <DependentUpon>chatwithwr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\chatwithwr2.resx">
+      <DependentUpon>chatwithwr2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\chatwithwr3.resx">
+      <DependentUpon>chatwithwr3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Engineermain2.resx">
+      <DependentUpon>Engineermain2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Engineermainpage.resx">
+      <DependentUpon>Engineermainpage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\chatengineer.resx">
+      <DependentUpon>chatengineer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\chatsupervisor.resx">
+      <DependentUpon>chatsupervisor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\ForgetPass.resx">
+      <DependentUpon>ForgetPass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\CheckEmail.resx">
+      <DependentUpon>CheckEmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\ChangePass.resx">
+      <DependentUpon>ChangePass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\MainPage.resx">
+      <DependentUpon>MainPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\MeeageCo3.resx">
+      <DependentUpon>MeeageCo3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\MesageCi.resx">
+      <DependentUpon>MesageCi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\MessageAbsence.resx">
+      <DependentUpon>MessageAbsence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\MessageAbsenceCo.resx">
+      <DependentUpon>MessageAbsenceCo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Messageci3.resx">
+      <DependentUpon>Messageci3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\MessageCo.resx">
+      <DependentUpon>MessageCo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\saftycamera.resx">
+      <DependentUpon>saftycamera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\saftycamera1.resx">
+      <DependentUpon>saftycamera1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\saftyphoto.resx">
+      <DependentUpon>saftyphoto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\saftyphoto1.resx">
+      <DependentUpon>saftyphoto1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\saftyphoto2.resx">
+      <DependentUpon>saftyphoto2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\saftyphoto3.resx">
+      <DependentUpon>saftyphoto3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\saftysearch.resx">
+      <DependentUpon>saftysearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\saftysearch1.resx">
+      <DependentUpon>saftysearch1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\saftysearch3.resx">
+      <DependentUpon>saftysearch3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Successfullyreset.resx">
+      <DependentUpon>Successfullyreset.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\chatengineer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\chatengineer.Designer.cs">
+      <DependentUpon>chatengineer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\chatsupervisor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\chatsupervisor.Designer.cs">
+      <DependentUpon>chatsupervisor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\chatengineer2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\chatengineer2.Designer.cs">
+      <DependentUpon>chatengineer2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\chatengineer3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\chatengineer3.Designer.cs">
+      <DependentUpon>chatengineer3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\ChatwithEn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\ChatwithEn.Designer.cs">
+      <DependentUpon>ChatwithEn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\ChatwithEn2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\ChatwithEn2.Designer.cs">
+      <DependentUpon>ChatwithEn2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\ChatwithEn3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\ChatwithEn3.Designer.cs">
+      <DependentUpon>ChatwithEn3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\ChatwithWorker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\ChatwithWorker.Designer.cs">
+      <DependentUpon>ChatwithWorker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\ChatwithWorker2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\ChatwithWorker2.Designer.cs">
+      <DependentUpon>ChatwithWorker2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\ChatwithWorker3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\ChatwithWorker3.Designer.cs">
+      <DependentUpon>ChatwithWorker3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AboutApp3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\AboutApp3.Designer.cs">
+      <DependentUpon>AboutApp3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\MesageCi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\MesageCi.Designer.cs">
+      <DependentUpon>MesageCi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\MessageAbsence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\MessageAbsence.Designer.cs">
+      <DependentUpon>MessageAbsence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\MessageAbsenceCo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\MessageAbsenceCo.Designer.cs">
+      <DependentUpon>MessageAbsenceCo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Messageci3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\Messageci3.Designer.cs">
+      <DependentUpon>Messageci3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\MessageCo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\MessageCo.Designer.cs">
+      <DependentUpon>MessageCo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\saftycamera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\saftycamera.Designer.cs">
+      <DependentUpon>saftycamera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\saftycamera1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\saftycamera1.Designer.cs">
+      <DependentUpon>saftycamera1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\saftyphoto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\saftyphoto.Designer.cs">
+      <DependentUpon>saftyphoto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\saftyphoto1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\saftyphoto1.Designer.cs">
+      <DependentUpon>saftyphoto1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\saftyphoto2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\saftyphoto2.Designer.cs">
+      <DependentUpon>saftyphoto2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\saftyphoto3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\saftyphoto3.Designer.cs">
+      <DependentUpon>saftyphoto3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\saftysearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\saftysearch.Designer.cs">
+      <DependentUpon>saftysearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\saftysearch1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\saftysearch1.Designer.cs">
+      <DependentUpon>saftysearch1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\saftysearch3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\saftysearch3.Designer.cs">
+      <DependentUpon>saftysearch3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\SupermainPage2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\SupermainPage2.Designer.cs">
+      <DependentUpon>SupermainPage2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Supervisorsearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\Supervisorsearch.Designer.cs">
+      <DependentUpon>Supervisorsearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\WorkermainPage2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\WorkermainPage2.Designer.cs">
+      <DependentUpon>WorkermainPage2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\workersearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\workersearch.Designer.cs">
+      <DependentUpon>workersearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Supervisormainpage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\Supervisormainpage.Designer.cs">
+      <DependentUpon>Supervisormainpage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Engineermainpage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\Engineermainpage.Designer.cs">
+      <DependentUpon>Engineermainpage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Workermainpage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\.Designer.cs">
+      <DependentUpon>Workermainpage.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\MainPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\MainPage.Designer.cs">
+      <DependentUpon>MainPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\ForgetPass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\ForgetPass.Designer.cs">
+      <DependentUpon>ForgetPass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\CheckEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\CheckEmail.Designer.cs">
+      <DependentUpon>CheckEmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\ChangePass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\ChangePass.Designer.cs">
+      <DependentUpon>ChangePass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Successfullyreset.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\Successfullyreset.Designer.cs">
+      <DependentUpon>Successfullyreset.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\SupermainPage2.resx">
+      <DependentUpon>SupermainPage2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Supervisormainpage.resx">
+      <DependentUpon>Supervisormainpage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Supervisorsearch.resx">
+      <DependentUpon>Supervisorsearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Workermainpage.resx">
+      <DependentUpon>Workermainpage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\WorkermainPage2.resx">
+      <DependentUpon>WorkermainPage2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\workersearch.resx">
+      <DependentUpon>workersearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\ِAbsentCo3.resx">
+      <DependentUpon>ِAbsentCo3.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
